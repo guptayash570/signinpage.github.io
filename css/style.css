@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+.welcomeBar {
+  height: 100vh;
+  background-image: url(/img/sign.jpg);
+  object-fit: scale-down;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  flex-grow: 0;
+}
+.signinBar {
+  flex-grow: 2;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+}
+.welcomeBar h3 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.welcomeBar p {
+  font-size: 17px;
+  font-weight: 100;
+  width: 55%;
+  text-align: center;
+  margin: 20px 0;
+}
+.welcomeBar button {
+  background: none;
+  border: 2px solid white;
+  border-radius: 500px;
+  padding: 5px 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 50%;
+  height: 9vh;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.signinBar h4 {
+  font-size: 50px;
+  font-weight: 1000;
+  color: #39b495;
+}
+.signinBar span {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #a3adab;
+}
+.icons {
+  /* background-color: #000; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid rgb(184, 184, 184);
+  padding: 20px;
+  margin-right: 30px;
+  border-radius: 1000px;
+  width: 60px;
+  height: 60px;
+}
+.inputs div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 500px;
+  background-color: #f1f8f8;
+  padding: 20px 15px;
+  border-radius: 7px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.inputs div i {
+  padding: 5px 20px;
+  font-size: 18px;
+}
+.inputs div input {
+  width: 450px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  outline: none;
+}
+#eye {
+  cursor: pointer;
+}
+.signin {
+  background-color: #39b495;
+  border: 2px solid white;
+  border-radius: 500px;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  width: 25%;
+  height: 9vh;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+}
+@media only screen and (max-width: 900px) {
+  .welcomeBar {
+    display: none;
+  }
+}
